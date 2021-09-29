@@ -11,6 +11,10 @@
   padding-left: 4cm;
 }
 
+.navbar-nav {
+  width: 100%;
+}
+
 .login-container {
   display: flex;
   width: 100%;
