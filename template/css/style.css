@@ -23,12 +23,18 @@ html {
   background-position: bottom;
 }
 
+.color-white {
+  color: #fff;
+  text-shadow: 0 0 3px #000
+
+}
+
 .monks-image, .banner {
   height: 50vh;
 }
 
 .banner {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .logo {
