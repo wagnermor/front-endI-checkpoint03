@@ -2,6 +2,10 @@
   background-color: black;
 }
 
+.logo {
+  width: 200px;
+}
+
 .navbar-brown a {
   color: white
 }
@@ -33,19 +37,20 @@ html {
 }
 
 .monges-image {
-  background-image: url(https://static01.nyt.com/images/2012/08/24/arts/24SAMSARA_SPAN/0824SAMSARA1-superJumbo.jpg);
+  /* background-image: url(https://static01.nyt.com/images/2012/08/24/arts/24SAMSARA_SPAN/0824SAMSARA1-superJumbo.jpg); */
    /* alt="Monges tibetanos criando mandala em areia colorida."); */
+  background-image: url("../img/monks-image.jpg");
   padding: 0;
   background-attachment: fixed, scroll;
   background-repeat: no-repeat, repeat-y;
+  
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position: 0 0;
 }
 
-/*   html{
-            background: url('Sun.jpg') no-repeat center center fixed;
-            -webkit-background-size:cover;
-            -moz-background-size:cover;
-            -o-background-size:cover;
-            background-size:cover;
-            background-position: 0 0;
-
-        } */
+.bg-read {
+  background-color: rgba(255, 255, 255, 0.3);
+}
