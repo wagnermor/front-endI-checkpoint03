@@ -1,0 +1,50 @@
+/* .navbar-brown, .logo {
+  background-color: #000;
+} */
+
+.navbar-brown a {
+  color: white
+}
+
+.navbar {
+  height: 20vh;
+}
+
+.banner {
+  height: 85vh;
+}
+
+.logo {
+  margin: 0 auto;
+}
+.logo a img {
+  width: 200px;
+  padding-top: .5rem;
+}
+
+/* navbar-toggler collapsed */
+.navbar-toggler, .collapsed, .navbar-toggler-icon {
+  color: rgba(255, 255, 255, 1);
+  border: none;
+}
+
+.navbar-collapse {
+  background: rgba(0, 0, 0, .8);
+  width: 30vw;
+  padding: .5rem;
+}
+
+@media (min-width: 480px) {
+  .navbar {
+    height: 56px;
+  }
+  .logo{
+    display: block;
+    padding-left: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0);
+  }
+}
