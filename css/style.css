@@ -1,5 +1,9 @@
-.navbar-brown {
-  background-color: black;
+/* .navbar-brown, .logo {
+  background-color: #000;
+} */
+
+html {
+  scroll-behavior: smooth;
 }
 
 .navbar-brown a {
@@ -7,46 +11,104 @@
 }
 
 .navbar {
-  height: 25vh;
-  padding-left: 4cm;
+  height: 20vh;
 }
 
-.navbar-nav {
-  width: 100%;
+.monks-image {
+  background-image: url("../img/monks-image.jpg");
+  padding: 0;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat, repeat-y;
+  background-size:cover;
+  background-position: bottom;
+}
+
+.color-white {
+  color: #fff;
+  text-shadow: 0 0 3px #000
+
+}
+
+.monks-image, .banner {
+  height: 50vh;
+}
+
+.banner {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  margin: 0 auto;
+}
+.logo a img {
+  width: 200px;
+  padding-top: .5rem;
+}
+
+/* navbar-toggler collapsed */
+.navbar-toggler, .collapsed, .navbar-toggler-icon {
+  color: rgba(255, 255, 255, 1);
+  border: none;
+}
+
+.navbar-collapse {
+  background: rgba(0, 0, 0, .8);
+  /* width: 30vw; */
+  padding: .5rem;
 }
 
 .login-container {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  padding-right: .5rem;
 } 
 
-.banner {
-  height: 85vh;
-}
-p:hover, h1:hover, a:hover {
-  background-color: yellow;
-}
-
-html {
-  scroll-behavior: smooth;
+.title-section {
+  display: flex;
+  align-items: center;
+  padding-left: .5rem;
+  height: 10vh;
+  margin-bottom: .5rem;
 }
 
-.monges-image {
-  /* background-image: url(https://static01.nyt.com/images/2012/08/24/arts/24SAMSARA_SPAN/0824SAMSARA1-superJumbo.jpg); */
-   /* alt="Monges tibetanos criando mandala em areia colorida."); */
-  background-image: url("../img/monks-image.jpg");
-  padding: 0;
-  background-attachment: fixed, scroll;
-  background-repeat: no-repeat, repeat-y;
-  
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
-  background-position: 0 0;
+.title-section, .filme-img img {
+  border-radius: 8px;
 }
 
-.bg-read {
-  background-color: rgba(255, 255, 255, 0.3);
+#filmes, #series, #documentarios {
+  color: #fff;
+  margin: 0;
+}
+
+.filme-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 200px; */
+}
+
+.filme-img img{
+  width: 100%;
+}
+
+/*full size*/
+@media (min-width: 480px) {
+  .navbar {
+    height: 56px;
+  }
+
+  .resize {
+    width: 80%;
+  }
+
+  .logo{
+    display: block;
+    padding-left: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0);
+  }
 }

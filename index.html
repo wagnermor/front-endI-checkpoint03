@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt_br">
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,81 +10,112 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>CheckPoint - Front End 1</title>
+    <title>CheckPoint - Front-end I</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg sticky-top navbar-brown bg-test">
-        <div class="container-fluid">
-          <div class="logo">
-            <a href="#" class="navbar-left"><img src="img/checkpoint-logo-593x96.png"></a>
-          </div>
+      <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <div class="logo text-center bg-dark">
+          <a href="#" class="navbar-left"><img src="./img/checkpoint-logo-593x96.png"></a>
+        </div>
+        <div class="container-fluid resize">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse bg-t" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Filmes</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#filmes">Filmes</a>
               <a class="nav-link" href="#">Séries</a>
               <a class="nav-link" href="#">Documentários</a>
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Outros</a>
-              <div class="login-container">
-                <form action="#" method="get">
-                  <input type="text" placeholder="Usuário" name="username">
-                  <input type="text" placeholder="Senha" name="psw">
-                  <button type="submit">Login</button>
-                </form>
-              </div>
             </div>
           </div>
         </div>
+        <!-- login form -->
+        <div class="login-container">
+          <form action="#" method="get">
+            <input type="text" placeholder="Usuário" name="username">
+            <input type="text" placeholder="Senha" name="psw">
+            <button type="submit">Login</button>
+          </form>
+        </div>
+        <!-- <button type="button" class="btn btn-primary button-login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Login
+      </button> -->
       </nav>
 
       <!-- banner -->
-      <div class="monges-image">
-      <!-- <div class="p-5 text-center d-flex flex-column align-items-center justify-content-center"> -->
-      <div class="p-5 text-center bg-read banner d-flex flex-column align-items-center justify-content-center">
-        <h1 class="mb-3">CheckPoint</h1>
-        <h4 class="mb-3">Front End 1</h4>
-        <a class="btn btn-primary" href="" role="button">Baixe grátis!</a>
-      </div>   
+      <div class="monks-image">
+        <div class="p-5 text-center banner d-flex flex-column align-items-center justify-content-center">
+          <h1 class="mb-3 color-white">CHECKPOINT</h1>
+          <h4 class="mb-3 color-white">Filmes, séries e documentários</h4>
+          <a class="btn btn-primary" href="" role="button">Call to action</a>
+        </div>      
       </div>
       <!-- banner -->
     </header>
 
     <main>
       <div class="container-sm my-3">
-
+        <div class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark title-section">
+          <h1 id="filmes">Filmes</h1>
+        </div>
         <div class="row">
+
           <div class="col-sm-4">
-            <h1>O Chamado da Floresta</h1>
-            <p>Um cão de estimação vivia confortavelmente na casa de uma família na Califórnia, mas é sequestrado e acaba em um dos lugares mais hostis do mundo, o Alaska. Seu destino se cruza com o de John Thornton, um homem corajoso disposto a explorar as belezas e aventuras da travessia de Yukon.</p>
+            <div class="filme-img">
+              <img src="./img/fox-logo.png" alt="">
+            </div>
+            <h1>Item 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum optio at voluptatum error, corrupti?</p>
           </div>
+
           <div class="col-sm-4">
-            <h1>Jungle Cruise</h1>
-            <p>A Dra. Lily Houghton pede a ajuda do sagaz capitão Frank Wolff para levá-la à Amazônia em seu barco em ruínas. Juntos, eles procuram por uma árvore ancestral que detém o poder de curar - uma descoberta que deve mudar o futuro da medicina.</p>
+            <div class="filme-img">
+              <img src="./img/fox-logo.png" alt="">
+            </div>
+            <h1>Item 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum optio at voluptatum error, corrupti?</p>
           </div>
+
           <div class="col-sm-4">
-            <h1>Mundo em Caos</h1>
-            <p>Em um futuro não muito distante, em um mundo onde as mulheres desapareceram e os homens foram afetados pelo "ruído" – uma força que deixa seus pensamentos audíveis - Todd Hewitt (Tom Holland) encontra Viola (Daisy Ridley), uma jovem misteriosa que aterrissou em seu planeta. Com Viola correndo perigo, Todd jura protegê-la e colocá-la fora de perigo. Para salvá-la, Todd terá que controlar seu "ruído", descobrir sua própria força e desvendar todos os segredos sombrios que seu planeta e sua comunidade guardam.</p>
+            <div class="filme-img">
+              <img src="./img/fox-logo.png" alt="">
+            </div>
+            <h1>Item 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum optio at voluptatum error, corrupti?</p>
           </div>
         </div>
 
         <div class="row">
+
           <div class="col-md-4">
-            <h1>Samsara</h1>
-            <p>Expandindo temas desenvolvidos em Baraka (1992) e Chronos (1985), Samsara explora as maravilhas naturais e os sofrimentos de nosso mundo, desde o mundano ao divino, procurando adentrar à insondável espiritualidade e experiência humana. Aborda também os horrores e violências criadas pela humanidade. Como bem afirma o Dalai Lama Tenzin Gyatso: "Samsara é a mente voltada pra fora, perdida em suas projeções; Nirvana é a mente voltada pra dentro, reconhecendo sua verdadeira natureza.” Diferente de um documentário tradicional ou um filme de viagem, Samsara assume a forma de uma meditação guiada não-verbal.</p>
+            <div class="filme-img">
+              <img src="./img/fox-logo.png" alt="">
+            </div>
+            <h1>Item 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum optio at voluptatum error, corrupti?</p>
           </div>
+
           <div class="col-md-4">
-            <h1>The Good Place</h1>
-            <p>The Good Place é uma série de televisão de comédia fantasiosa americana criada por Michael Schur. Ela estreou na NBC em 19 de setembro de 2016 e foi concluída em 30 de janeiro de 2020, após quatro temporadas e 53 episódios.</p>
+            <div class="filme-img">
+              <img src="./img/fox-logo.png" alt="">
+            </div>
+            <h1>Item 5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum optio at voluptatum error, corrupti?</p>
           </div>
+
           <div class="col-md-4">
-            <h1>Cuba e o Cameraman</h1>
-            <p>Traduzido do inglês-Cuba and the Cameraman é um documentário americano de 2017 escrito, dirigido e coproduzido por Jon Alpert. O filme é original da Netflix e foi exibido pela primeira vez no 74º Festival Internacional de Cinema de Veneza.</p>
+            <div class="filme-img">
+              <img src="./img/fox-logo.png" alt="">
+            </div>
+            <h1>Item 6</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum optio at voluptatum error, corrupti?</p>
           </div>
         </div>
-
+        
       </div>
     </main>
 
