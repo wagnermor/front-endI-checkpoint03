@@ -18,7 +18,7 @@
         <div class="logo text-center bg-dark">
           <a href="#" class="navbar-left"><img src="./img/checkpoint-logo-593x96.png"></a>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid resize">
           <!-- <a class="navbar-brand" href="#">Navbar</a> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,13 +26,24 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Filmes</a>
+              <a class="nav-link" href="#filmes">Filmes</a>
               <a class="nav-link" href="#">Séries</a>
               <a class="nav-link" href="#">Documentários</a>
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Outros</a>
             </div>
           </div>
         </div>
+        <!-- login form -->
+        <div class="login-container">
+          <form action="#" method="get">
+            <input type="text" placeholder="Usuário" name="username">
+            <input type="text" placeholder="Senha" name="psw">
+            <button type="submit">Login</button>
+          </form>
+        </div>
+        <!-- <button type="button" class="btn btn-primary button-login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Login
+      </button> -->
       </nav>
 
       <!-- banner -->
@@ -48,17 +59,29 @@
 
     <main>
       <div class="container-sm my-3">
+        <div class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark title-section">
+          <h1 id="filmes">Filmes</h1>
+        </div>
 
         <div class="row">
           <div class="col-sm-4">
+            <div class="filme-img">
+              <img src="./img/fox-logo.png" alt="">
+            </div>
             <h1>Item 1</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum optio at voluptatum error, corrupti?</p>
           </div>
           <div class="col-sm-4">
+            <div class="filme-img">
+              <img src="./img/fox-logo.png" alt="">
+            </div>
             <h1>Item 2</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum optio at voluptatum error, corrupti?</p>
           </div>
           <div class="col-sm-4">
+            <div class="filme-img">
+              <img src="./img/fox-logo.png" alt="">
+            </div>
             <h1>Item 3</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum optio at voluptatum error, corrupti?</p>
           </div>
@@ -66,14 +89,23 @@
 
         <div class="row">
           <div class="col-md-4">
+            <div class="filme-img">
+              <img src="./img/fox-logo.png" alt="">
+            </div>
             <h1>Item 4</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum optio at voluptatum error, corrupti?</p>
           </div>
           <div class="col-md-4">
+            <div class="filme-img">
+              <img src="./img/fox-logo.png" alt="">
+            </div>
             <h1>Item 5</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum optio at voluptatum error, corrupti?</p>
           </div>
           <div class="col-md-4">
+            <div class="filme-img">
+              <img src="./img/fox-logo.png" alt="">
+            </div>
             <h1>Item 6</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam rerum optio at voluptatum error, corrupti?</p>
           </div>

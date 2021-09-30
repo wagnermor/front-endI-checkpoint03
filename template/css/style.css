@@ -11,17 +11,19 @@
 }
 
 .monks-image {
-  height: 85vh;
   background-image: url("../img/monks-image.jpg");
   padding: 0;
   background-attachment: fixed, scroll;
   background-repeat: no-repeat, repeat-y;
   background-size:cover;
-  background-position: 0 0;
+  background-position: bottom;
+}
+
+.monks-image, .banner {
+  height: 50vh;
 }
 
 .banner {
-  height: 85vh;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -41,14 +43,55 @@
 
 .navbar-collapse {
   background: rgba(0, 0, 0, .8);
-  width: 30vw;
+  /* width: 30vw; */
   padding: .5rem;
 }
 
+.login-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: .5rem;
+} 
+
+.title-section {
+  display: flex;
+  align-items: center;
+  padding-left: .5rem;
+  height: 10vh;
+  margin-bottom: .5rem;
+}
+
+.title-section, .filme-img img {
+  border-radius: 8px;
+}
+
+#filmes, #series, #documentarios {
+  color: #fff;
+  margin: 0;
+}
+
+.filme-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 200px; */
+}
+
+.filme-img img{
+  width: 100%;
+}
+
+/*full size*/
 @media (min-width: 480px) {
   .navbar {
     height: 56px;
   }
+
+  .resize {
+    width: 80%;
+  }
+
   .logo{
     display: block;
     padding-left: .5rem;
