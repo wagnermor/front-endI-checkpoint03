@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
+a, a:hover{
+  text-decoration: none;
+  color:#000;
+}
+
 .navbar-brown a {
   color: white
 }
@@ -90,6 +95,10 @@ html {
 
 .filme-img img{
   width: 100%;
+}
+
+a .visitado {
+  /* color:#000; */
 }
 
 .itens {
